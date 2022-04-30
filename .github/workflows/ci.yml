@@ -7,5 +7,9 @@ jobs:
   Deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: saludar
-        run: echo "Hola este es mi primer ci/cd"
+      - name: Conect ssh
+        env:
+            PRIVATE_KEY: ${{secrets.AWS_PEM}}
+            HOSTNAME: ${{secrets.AWS_HOST}}
+            USERNAME: ${{secrets.AWS_USER}}
+        run: echo $PRIVATE_KEY
