@@ -7,7 +7,7 @@ app.use(cors())
 
 
 app.get('/hello', (req, resp)=>{
-    resp.status(200).send({msg:"Hello world"})
+    resp.status(200).send({msg:"Hello world in ci/cd"})
 })
 
 
