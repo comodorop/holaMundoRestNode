@@ -1,0 +1,9 @@
+name: Ci/Cd course devops
+
+
+jobs:
+  Deploy:
+    run-on: ubuntu-latest
+    steps:
+      - name: saludar
+        run: echo "Hola este es mi primer ci/cd"
